@@ -1,0 +1,200 @@
+/* Reset dasar */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body{
+background:#f5f6fa;
+}
+
+/* Sidebar */
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:220px;
+height:100vh;
+background:#2f3640;
+color:white;
+padding:20px;
+z-index:1000;
+}
+
+/* Judul sidebar */
+.sidebar h4{
+margin-bottom:20px;
+font-weight:bold;
+}
+
+/* Menu */
+.sidebar a{
+display:block;
+color:white;
+padding:12px;
+margin-bottom:5px;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+
+/* Hover menu */
+.sidebar a:hover{
+background:#40739e;
+padding-left:15px;
+}
+
+/* Konten utama */
+.content{
+margin-left:220px;
+padding:30px;
+min-height:calc(100vh - 80px);
+}
+
+/* Card */
+.card{
+border:none;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* Tabel */
+table{
+width:100%;
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+/* Header tabel */
+table th{
+background:#273c75;
+color:white;
+}
+
+/* Tombol */
+.btn{
+border-radius:8px;
+}
+
+/* Input */
+.form-control{
+border-radius:8px;
+}
+
+/* Footer */
+footer{
+margin-left:220px;
+padding:15px;
+background:#f1f2f6;
+text-align:center;
+margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.sidebar{
+position:relative;
+width:100%;
+height:auto;
+}
+
+.content{
+margin-left:0;
+}
+
+footer{
+margin-left:0;
+}
+
+}
+
+/* ===== LOGIN PAGE ===== */
+/* Reset dasar agar tampilan konsisten di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Memperbaiki latar belakang seluruh halaman login */
+.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Menggunakan gradasi biru yang mirip dengan screenshot kamu */
+    background: linear-gradient(135deg, #42e3f5 0%, #29b6f6 100%);
+}
+
+/* Wadah utama (Container) */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Kotak putih tempat form */
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Mengatur input agar rapi dan menumpuk */
+.login-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Efek saat input diklik (fokus) */
+.login-box input:focus {
+    border-color: #29b6f6;
+}
+
+/* Mempercantik tombol Login */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Efek saat tombol diarahkan kursor */
+.login-box button:hover {
+    background-color: #0288d1;
+}
+
+.content{
+flex:1;
+}
