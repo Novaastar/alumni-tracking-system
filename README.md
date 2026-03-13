@@ -46,11 +46,20 @@ Sistem ini dibuat untuk memudahkan pelacakan data alumni, termasuk status mereka
 7. Klik tombol “Bukti” untuk download PDF hasil pelacakan per-alumni.
 
 ## Struktur Folder
-/alumni-tracking-system
+alumni-tracking-system/
 │
-├─ /fpdf # Library FPDF
-├─ /css # File style.css
-├─ /layout # Header, Footer, Sidebar
+├─ fpdf/                  # Library FPDF untuk generate PDF
+│   └─ fpdf.php
+│
+├─ css/                   # File CSS untuk semua halaman
+│   └─ style.css
+│
+├─ layout/                # Header, Footer, Sidebar
+│   ├─ header.php
+│   ├─ footer.php
+│   └─ sidebar.php
+│
+├─ index.php              # Bisa dijadikan halaman login utama
 ├─ dashboard.php
 ├─ tambah_alumni.php
 ├─ edit_alumni.php
@@ -58,7 +67,8 @@ Sistem ini dibuat untuk memudahkan pelacakan data alumni, termasuk status mereka
 ├─ jalankan_pelacakan.php
 ├─ hasil_pelacakan.php
 ├─ bukti_pelacakan.php
-└─ koneksi.php
+├─ koneksi.php
+└─ README.md
 
 
 ## Credit
